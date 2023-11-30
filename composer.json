@@ -1,6 +1,6 @@
 {
     "name": "i-lateral/silverstripe-importexport",
-    "description": "An upgrade to SilverStripe's bulk loading and exporting",
+    "description": "An upgrade to SilverStripe's bulk loading and exporting for PHP 8.1",
     "type": "silverstripe-vendormodule",
     "license": "MIT",
     "keywords": [
@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "php": ">=5.6",
+        "php": ">=8.1",
         "silverstripe/framework": "^4.2",
         "silverstripe/admin": "^1.2",
         "silverstripe/assets": "^1.2",
