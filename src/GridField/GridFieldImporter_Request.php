@@ -124,7 +124,7 @@ class GridFieldImporter_Request extends RequestHandler
         $field = $this->getUploadField();
         $uploadResponse = $field->upload($request);
         //decode response body. ugly hack ;o
-        $body = Convert::json2array($uploadResponse->getBody());
+        $body = json_decode($uploadResponse->getBody(), true);
         $body = array_shift($body);
         //add extra data
         $body['import_url'] = Controller::join_links(
@@ -137,7 +137,7 @@ class GridFieldImporter_Request extends RequestHandler
         unset($body['buttons']);
 
         //re-encode
-        $response = HTTPResponse::create(Convert::raw2json([$body]));
+        $response = HTTPResponse::create(json_encode([$body]));
 
         return $response;
     }
