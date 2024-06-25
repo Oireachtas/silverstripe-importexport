@@ -239,7 +239,7 @@ class BetterBulkLoader extends BulkLoader
 
             //publish pages
             if (class_exists(SiteTree::class) && $this->publishPages && $obj instanceof SiteTree) {
-                $obj->publish('Stage', 'Live');
+                $obj->copyVersionToStage('Stage', 'Live');
             }
 
             // save to results
