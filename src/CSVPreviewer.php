@@ -55,6 +55,22 @@ class CSVPreviewer extends ViewableData
         //hack to include first row as a
         array_unshift($this->rows, array_combine($firstrow, $firstrow));
 
+        // hack to remove the 0,1,2,3,4 row
+        foreach ($this->rows as $rowKey => $columns) {
+            $rowShouldBeRemoved = true;
+
+            foreach ($columns as $key => $value) {
+                if ($key !== $value) {
+                    $rowShouldBeRemoved = false;
+                    break;
+                }
+            }
+
+            if ($rowShouldBeRemoved) {
+                unset($this->rows[$rowKey]);
+            }
+        }
+
         if (count($this->rows) > 0) {
             $this->headings = $firstrow;
         }
