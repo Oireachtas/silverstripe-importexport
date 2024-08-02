@@ -273,6 +273,12 @@ class BetterBulkLoader extends BulkLoader
     {
         $adjustedmap = $this->columnMap;
         $newrecord = array();
+
+        if (empty($record[0])) {
+            // let's reset the record keys
+            $record = array_values($record);
+        }
+
         foreach ($record as $field => $value) {
             if (isset($adjustedmap[$field])) {
                 $newrecord[$adjustedmap[$field]] = $value;
