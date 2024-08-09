@@ -238,7 +238,7 @@ class BetterBulkLoader extends BulkLoader
             $obj->write();
 
             //publish pages
-            if (class_exists(SiteTree::class) && $this->publishPages && $obj instanceof SiteTree) {
+            if (class_exists(SiteTree::class) && $this->publishPages) {
                 $obj->copyVersionToStage('Stage', 'Live');
             }
 
