@@ -64,7 +64,7 @@ class CSVPreviewer extends ModelData
      * Render the previewer
      * @return string
      */
-    public function forTemplate()
+    public function forTemplate(): string
     {
         if (!$this->rows) {
             $this->loadCSV();
