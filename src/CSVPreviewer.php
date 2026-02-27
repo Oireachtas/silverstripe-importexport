@@ -5,12 +5,12 @@ namespace ilateral\SilverStripe\ImportExport;
 use SilverStripe\Dev\CSVParser;
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\View\ArrayData;
-use SilverStripe\View\ViewableData;
+use SilverStripe\Model\ModelData;
 
 /**
  * View the content of a given CSV file
  */
-class CSVPreviewer extends ViewableData
+class CSVPreviewer extends ModelData
 {
 
     protected $file;
