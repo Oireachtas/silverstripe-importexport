@@ -18,7 +18,7 @@ class UploadField extends \SilverStripe\AssetAdmin\Forms\UploadField
      */
     private $link;
 
-    public function __construct($name, $title = null, SS_List $items = null)
+    public function __construct($name, $title = null, ?SS_List $items = null)
     {
         parent::__construct($name, $title, $items);
 
