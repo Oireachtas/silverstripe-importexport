@@ -23,7 +23,7 @@
         }
     ],
     "require": {
-        "php": ">=8.4",
+        "php": ">=8.3",
         "silverstripe/framework": "^6.1",
         "silverstripe/admin": "^3.1",
         "silverstripe/assets": "^3.1",
