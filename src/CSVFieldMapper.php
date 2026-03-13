@@ -3,7 +3,7 @@
 namespace ilateral\SilverStripe\ImportExport;
 
 use SilverStripe\ORM\ArrayList;
-use SilverStripe\View\ArrayData;
+use SilverStripe\Model\ArrayData;
 use SilverStripe\Forms\DropdownField;
 
 /**

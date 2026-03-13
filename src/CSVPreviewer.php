@@ -3,8 +3,8 @@
 namespace ilateral\SilverStripe\ImportExport;
 
 use SilverStripe\Dev\CSVParser;
-use SilverStripe\ORM\ArrayList;
-use SilverStripe\View\ArrayData;
+use SilverStripe\Model\List\ArrayList;
+use SilverStripe\Model\ArrayData;
 use SilverStripe\Model\ModelData;
 
 /**

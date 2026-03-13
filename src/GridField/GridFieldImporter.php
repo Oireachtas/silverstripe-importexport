@@ -2,7 +2,7 @@
 
 namespace ilateral\SilverStripe\ImportExport\GridField;
 
-use SilverStripe\View\ArrayData;
+use SilverStripe\Model\ArrayData;
 use SilverStripe\ORM\HasManyList;
 use SilverStripe\View\Requirements;
 use SilverStripe\Forms\GridField\GridField;
